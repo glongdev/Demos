@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            tools:srcCompat="@drawable/planet_diqiu_activated" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/appCompatImageView"
+            app:layout_anchorGravity="bottom|center_horizontal"
+            tools:background="@drawable/bg_award_exchange_enable"
+            tools:text="地球" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/MyProgressBar"
+        android:layout_width="88dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:progress="50"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/coordinatorLayout"
+        app:layout_constraintStart_toStartOf="@+id/coordinatorLayout"
+        app:layout_constraintTop_toBottomOf="@+id/coordinatorLayout" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="24dp"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        android:translationX="-12dp"
+        app:srcCompat="@drawable/ic_main_award"
+        android:layout_height="24dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        tools:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        tools:text="50/100" />
+
+</merge>

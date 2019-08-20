@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandActivity">
+
+    <com.glong.demo.view.StarGroupView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/sun_view"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_launcher_background"
+            android:tag="center" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="6" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ff3311"
+            android:gravity="center"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#11aa44"
+            android:gravity="center"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ff99cc"
+            android:gravity="center"
+            android:text="9" />
+
+    </com.glong.demo.view.StarGroupView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
