@@ -244,7 +244,7 @@ public class StarGroupView extends FrameLayout {
         return super.onTouchEvent(event);
     }
 
-    private void scrollByVelocity(Float velocity) {
+    private void scrollByVelocity(float velocity) {
         float end;
         if (velocity < 0)
             end = -AUTO_SWEEP_ANGLE;
